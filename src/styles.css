@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  background: rgba(241,245,248,255);
+}
+
+h1 {
+  text-align: center;
+  margin: 2rem 0 4rem 0;
+  color:#caa771;
+}
+
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: rgba(255,255,255,255);
+}
+
+.accordion-title:hover {
+  background-color: whitesmoke;
+}
+
+.accordion-title, .accordion-content {
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.accordion-content {
+  background-color: rgba(255,255,255,255);
+  
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+}
